@@ -1,0 +1,114 @@
+
+input, textarea{
+    font-family: serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--gris);
+}
+
+.error_login{
+    display: none;
+    text-align: center;
+    border: 2px solid #D80808;
+    color: #CC1E1E;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 30px;
+}
+
+div#container_weather{
+    width: 100%;
+}
+
+i{
+    font-size: 25px;
+}
+
+
+
+div.logo{
+    display: flex;
+    padding: 3px 10px;
+} 
+
+    div.logo img{
+        width: 50px;
+        margin-right: 4px;
+    }
+
+    div.logo div.h2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }   
+
+        div.h2 h2{
+            color: var(--azul);
+            font-size: 22px;
+            margin-top: -3px;
+        }
+
+        div.h2 h2.b{
+            color: var(--azul);
+            font-size: 22px;
+            margin-bottom: -3px;
+        }
+
+
+div.div_map{
+    position: relative;
+}
+
+.btn_geolo{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 11px;
+    bottom: 260px;
+    right: 22px;
+    z-index: 10;
+    background: white;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.img_geolo{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background-position: 0 0;
+    background-image: url("/museo/static/img/inicio/mylocation.png"); 
+    background-size: 180px 18px;
+    background-repeat: no-repeat;
+}
+
+.div_lat_lng{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 12px;
+    /*bottom: 220px;*/
+    /*left: 11px;*/
+    z-index: 10;
+    background: white;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form.form div.input .div_lat_lng input{
+    padding: 9.5px 0px;
+    font-size: 19px;
+    margin: 0 20px;
+    margin-left: 12px;
+}
+
+.div_lat_lng label{
+    font-size: 20px;
+}

@@ -1,0 +1,390 @@
+
+/*---------------------*/
+/*------INFORME_1------*/
+/*---------------------*/
+
+div.contenido_panel.informes{
+    background: #F7F7F7;
+}
+
+div.agregar_nuevo{
+    width: 130px;
+    text-align: center;
+}
+
+form.form.informes{
+    padding-top: 0;
+    padding-right: 0;
+}
+
+div.workspace{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    background: #FFF;
+    color: #000000;
+    min-height: 350px;
+    padding: 15px 60px;
+    padding-bottom: 0px;
+    padding-bottom: 40px;
+    margin: auto;
+     margin-top: auto;
+    margin-top: 10px;
+    border: 1px solid #C6C6C6;
+}
+
+div.content_informe{
+    display: flex;
+    flex-direction: column;
+    font-family: arial,helvética;
+}
+
+div.tb_informes table
+{
+    --tb_border: #929292;
+    --tb_gris_a: #676767;
+    --tb_gris_b: #9B9B9B;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--tb_border);
+    margin-bottom: 10px;
+    
+}
+
+div.tb_informes table td,
+div.tb_informes table th
+{
+    font-size: 15px;
+    height: 30px;
+}
+
+div.tb_informes table.lowercase td,
+div.tb_informes table.lowercase th
+{
+    font-size: 15px;
+}
+
+
+div.tb_informes table td,
+div.tb_informes table th
+{
+    border: 1px solid var(--tb_border);
+    padding: 4px 5px;
+}
+
+
+div.tb_informes table tr.center td,
+div.tb_informes table tr.center th
+{
+    text-align: center;
+}
+
+div.tb_informes table td.center,
+div.tb_informes table th.center
+{
+    text-align: center !important;
+}
+
+
+div.tb_informes table tr.left td,
+div.tb_informes table tr.left th
+{
+    text-align: left;
+}
+
+div.tb_informes table td.left,
+div.tb_informes table th.left
+{
+    text-align: left !important;
+}
+
+div.tb_informes table td.nopadd,
+div.tb_informes table th.nopadd
+{
+    padding: 0 !important;
+}
+
+div.tb_informes table td.bold,
+div.tb_informes table th.bold
+{
+    font-weight: bold;
+}
+
+div.tb_informes table span.block
+{
+   display: block !important;
+}
+
+div.tb_informes .titulo_header
+{
+    font-size: 16px;
+    color: #9B9B9B;
+    font-weight: bold;
+}
+
+div.tb_informes table.header
+{
+    font-size: 15px;
+    color: #9B9B9B;
+}
+
+div.tb_informes table.header td,
+div.tb_informes table.header th,
+div.tb_informes table.header input
+{   
+    font-size: 15px;
+    color: #9B9B9B;
+}
+
+
+div.tb_informes table input{
+    padding: 3px 6px;
+    border-radius: 5px;
+    background: transparent;
+    color: var(--azul);
+    border: 2px solid transparent;
+    font-family: sans-serif;
+    font-size: inherit;
+}
+
+div.tb_informes table input[type="date"],
+div.tb_informes table input[type="time"]
+{
+    height: 29px;
+}
+
+div.tr_informe input{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+div.tb_informes table textarea{
+    padding: 4px;
+    background: transparent;
+    font-family: sans-serif;
+    font-size: inherit;
+    border: 2px solid transparent;
+    resize: vertical;
+    width: 100%;
+    height: 29px;
+    min-height: 29px;
+    max-height: 100px;
+}
+
+div.tb_informes table input.total
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+div.tb_informes table input.total.center,
+div.tb_informes table textarea.total.center
+{
+    text-align: center;
+}
+
+
+div.tb_informes table input.total:focus,
+div.tb_informes table textarea.total:focus
+{
+    border-color: var(--azul);
+}
+
+div.tb_informes table input[type="date"]{
+    width: 135px;
+}
+
+div.tb_informes table input[type="date"].total{
+    width: 100%;
+}
+
+
+div.agregar_firma_digital{
+    height: 29px;
+}
+
+div.agregar_firma_digital input{
+    display: none;
+}
+
+div.agregar_firma_digital .loading_inf img{
+    display: none;
+    width: 29px;
+}
+
+div.agregar_firma_digital label.button_firma{
+    display: inline-flex;
+    font-size: 15px;
+    /*font-weight: bold;*/
+    white-space: nowrap;
+    color: var(--azul);
+    padding: 2px 6px;
+    margin: 0 5px;
+    border-bottom: 1px solid var(--azul);
+    /*border-radius: 5px;*/
+    cursor: pointer;
+}
+
+div.agregar_firma_digital div.div_img{
+    display: inline-flex;
+    margin: auto;
+    position: relative;
+}
+
+div.agregar_firma_digital .quitar_img{
+    display: inline-flex;
+    font-size: 20px;
+    background: white;
+    color: var(--gris);
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);    
+} 
+
+div.agregar_firma_digital div.div_img img{
+    max-height: 30px;
+    max-width: 200px;
+}
+
+/*--------------------------------------*/
+div.content_informe input.input_informe{
+    padding: 4px 6px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid var(--azul);
+    font-family: sans-serif;
+    font-size: inherit;
+}
+
+div.content_informe h2.informe_doc,
+div.content_informe p.informe_doc
+{
+    text-align: justify;
+    margin-bottom: 14px;
+}
+
+div.content_informe h2.informe_doc{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+div.content_informe h3.informe_doc{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+div.content_informe div.space_doc{
+    margin-bottom: 14px;
+}
+
+div.tr_informe{
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+div.tr_informe div.next{
+    display: inline-block;
+    width: 20px;
+}
+
+div.content_informe div.last{
+    margin-bottom: 25px;
+}
+
+div.content_informe div.space{
+    margin-bottom: 25px;
+}
+
+div.informes_footer{
+    display: block;
+    width: 100%;
+    color: #9B9B9B;
+    font-size: 16px;
+}
+
+.informes_span_1{
+    display: block;
+    width: 100%;
+    /*justify-content: center;*/
+    text-align: center;
+    padding: 7px;
+    border-top: 1px solid #339966;
+    font-size: 14px;
+}
+
+
+div.content_informe div.div_logo_1{
+    margin: 0 5px;
+}
+
+div.content_informe .logo_1{
+    margin: 0 15px;
+}
+
+div.content_informe table a.button{
+    padding: 4px 8px;
+    height: 30px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+div.content_informe table a.button i{
+    font-size: 15px;
+}
+
+div.content_informe table td.td_s1{
+    width: 120px;
+}
+/*--------------------*/
+/*--------------------*/
+div#informe_1 div.workspace{
+    padding: 20px 108px;
+}
+
+
+/*---------------------*/
+/*---------------------*/
+/*---------------------*/
+/*------informe_2------*/
+/*---------------------*/
+/*---------------------*/
+/*---------------------*/
+
+div#informe_2 div.content_informe img.logo_1{
+    width: 100px;
+}
+
+div#informe_2 div.workspace{
+    min-width: 960px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+div#informe_2 table.header td
+{
+    font-size: 14px;
+}
+
+div#informe_2 div.content_informe,
+div#informe_2 div.content_informe table td
+{
+    font-size: 11px;
+}
+
+/*---------------------*/
+/*---------------------*/
+/*---------------------*/
+/*------INFORME_3------*/
+/*---------------------*/
+/*---------------------*/
+/*---------------------*/
+
+div#content_informe_3{
+    min-width: 770px;
+}
+

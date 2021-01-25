@@ -1,0 +1,325 @@
+
+/*-------------------------*/
+/*---------TABLAS----------*/
+/*-------------------------*/
+
+div.tabla{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 12px;
+    margin-bottom: 15px;
+}
+
+div.tabla.no_color table,
+div.tabla.no_color table th,
+div.tabla.no_color table tr,
+div.tabla.linea_h table,
+div.tabla.linea_h table th,
+div.tabla.linea_h table tr
+{
+    background: transparent;
+    border: none;
+}
+
+div.tabla.no_color table thead,
+div.tabla.linea_h table thead
+{
+    background: transparent;
+    text-align: center;
+}
+
+div.tabla.no_color{
+    width: 95%;
+    margin: auto;
+}
+
+div.tabla.no_color table{
+    width: 100%;
+}
+
+
+div.tabla.no_color table td{
+    padding: 8px 4px;
+}
+
+div.tabla.no_color table td.td_actividad{
+    width: 100%;
+}
+
+div.tabla.linea_h table thead tr,
+div.tabla.linea_h table tbody tr
+{
+    border-bottom: 1px solid var(--border_gris);
+}
+
+div.tabla.linea_h table tbody tr.last
+{
+    border-bottom: none;
+}
+
+div.tabla.last{
+    margin-bottom: 40px;
+}
+
+    div.tabla table{
+        border-collapse: collapse;
+        font-size: 20px;
+    }
+
+        div.tabla table thead{
+            background: #EEEEEE;
+            font-size: 21px;
+            text-align: left;
+        }
+
+            div.tabla table thead th{
+                padding: 12px 6px;
+            }
+        
+        div.tabla table tr.tr_color{
+            background: var(--azul);
+            color: var(--blanco);
+            border-left: 1px solid var(--azul);
+            border-right: 1px solid var(--azul);
+        }
+
+        div.tabla table tr.tr_color_b{
+            background: var(--azul_c);
+            color: var(--blanco);
+            border-left: 1px solid var(--azul_c);
+            border-right: 1px solid var(--azul_c);
+        }
+
+        
+        div.tabla table thead tr, div.tabla table tbody tr{
+            align-items: center;
+            border-bottom: 1px solid #D4D4D4;
+        }
+
+        div.tabla.even table tbody tr:nth-child(even){
+            background: #F9F9F9;
+        }
+
+            div.tabla table tbody td{
+                padding: 12px 8px;
+            }
+
+        div.tabla table tbody tr td div.td_icon{
+            display: inline-flex;
+            align-items: center;
+        }
+
+        div.tabla table tbody tr td div.td_icon i
+        {
+            padding-left: 2px;
+            font-size: 19px;
+            margin-right: 6px;
+        }
+
+        div.tabla table tbody tr td div.td_icon img
+        {
+            margin-right: 6px;
+        }
+
+    div.tabla table{
+        color: var(--gris);
+        border-left: 1px solid #D4D4D4;
+        border-right: 1px solid #D4D4D4;
+        border-top: 1px solid #D4D4D4;
+        border-radius: 6px;
+        width: 100%;
+    }
+        div.tabla table th{
+            padding: 14px 15px;
+            font-size: 19px;
+            white-space: nowrap;
+            text-align: center;
+        }
+        
+        div.tabla table td{
+            text-align: center;
+        }
+
+            div.tabla .div_acciones{
+                display: flex;
+                justify-content: center;
+            }
+
+            div.tabla .acciones{
+                display: inline-flex;
+                position: relative;
+                color: var(--gris);
+                align-items: center;
+                justify-content: center;
+                width: 41px;
+                height: 41px;
+                cursor: pointer;
+            }
+
+            div.tabla .acciones i{
+                padding: 9px;
+                background: transparent;
+                border-radius: 50%;
+                font-size: 23px;
+            }
+
+            div.tabla .acciones i:hover{
+                padding: 9px;
+                background: rgba(0,0,0,0.12);
+                border-radius: 50%;
+                color: var(--azul);
+            }
+
+            div.tabla .acciones i:hover+span.icon_info{
+                display: flex;
+            }
+
+
+            div.tabla .acciones span.icon_info{
+                display: none;
+                position: absolute;
+                white-space: nowrap;
+                background: #505050;
+                color: var(--blanco);
+                font-size: 17px;
+                padding: 5px 10px;
+                border-radius: 5px;
+                bottom: -40px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 6;
+                box-shadow: 0 0 2px 0 rgba(0,0,0,0.22);
+            }
+
+
+div.tabla table tr.tr_sin_color th{
+        padding: 12px 10px;
+        white-space: normal;
+    }
+
+    div.tabla table tr td.td_nombres{
+        width: 300px;
+        min-width: 300px;
+        white-space: nowrap;
+        text-align: left;
+    }
+
+    div.tabla table tr td.td_codigo{
+        width: 50px;
+        min-width: 50px;
+        /*border-right: 1px solid var(--border_gris);*/
+    }
+
+    div.tabla table tr td.td_estado{
+        width: 240px;
+        min-width: 240px;
+        /*border-right: 1px solid var(--border_gris);*/
+    }
+
+    div.tabla table tr td.td_modulo{
+        min-width: 300px;
+        white-space: nowrap;
+        text-align: left;
+        /*border-right: 1px solid var(--border_gris);*/
+    }
+
+    div.tabla table tr td.td_tipo_doc{
+        white-space: nowrap;
+    }
+
+    div.tabla table tr td.td_acciones
+    {
+        padding: 0 5px;
+        /*border-left: 1px solid var(--border_gris);*/
+        width: 140px;
+    }
+
+    div.tabla table tr td.td_button
+    {
+        background: white;
+    }
+
+    div.tabla table tr td.td_atendido{
+        font-weight: bold;
+        color: #1CAB29;
+    }
+
+     div.tabla table tr td.td_desatendido{
+        font-weight: bold;
+        color: #D31111;
+    }
+
+
+    div.tabla div.button a{
+        color: var(--azul);
+        font-size: 19px;
+        padding: 4px 12px;
+        cursor: pointer;
+    }
+
+    div.tabla div.button i{
+        font-size: 14px;
+        margin-right: 6px;
+    }
+
+    div.tabla table tr{
+        /*vertical-align: top;*/
+    }
+
+    div.tabla table tr th,
+    div.tabla table tr td
+    {
+        /*border: 1px solid var(--border_gris);*/
+    }
+
+
+div.tabla table tr.left th,
+div.tabla table tr.left td
+{
+    text-align: left;
+}
+
+div.tabla table tr.center th,
+div.tabla table tr.center td
+{
+    text-align: center;
+}
+
+div.tabla table tr.right th,
+div.tabla table tr.right td
+{
+    text-align: right;
+}
+
+div.tabla table tr th.left,
+div.tabla table tr td.left
+{
+    text-align: left;
+}
+
+div.tabla table tr th.center,
+div.tabla table tr td.center
+{
+    text-align: center;
+}
+
+div.tabla table tr th.right,
+div.tabla table tr td.right
+{
+    text-align: right;
+}
+
+div.tabla table tr th.nowrap,
+div.tabla table tr td.nowrap
+{
+    white-space: nowrap;
+}
+
+
+div.tabla table tr th.no_padd,
+div.tabla table tr td.no_padd
+{
+    padding: 0;
+}
+

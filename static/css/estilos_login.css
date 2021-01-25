@@ -1,0 +1,276 @@
+/*-------------------*/
+/*-------LOGIN-------*/
+/*-------------------*/
+
+main.login{
+    /*background-image: url(/grapp/static/img/default/fondo1.jpg);*/
+    /*background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;*/
+    background: #E0E0E0;
+    overflow: hidden;
+}
+
+div.login,
+div.elegir_municipio
+{
+    width: 100%;
+    height: 100vh;
+    /*background: #E9E9E9;*/
+}
+    
+    div.login form,
+    div.elegir_municipio form
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #FFFFFF;
+        width: 530px;
+        height: 540px;
+        padding: 15px;
+        position: absolute;
+        top: -70px;
+        left: -20px;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        margin: auto;
+        border-radius: 6px;
+        /*box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);*/
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        border-top: 1px solid #CCCCCC;
+    }
+
+    div.login form .relieve{
+        display: flex;
+        background: #FAFAFA;
+        width: 490px;
+        height: 11px;
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 1px 0 2px 0 rgba(0,0,0,0.14),-1px 0 2px 0 rgba(0,0,0,0.14);
+    }
+
+    div.login div.logo{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    div.login div.logo img{
+        width: 100px;
+    }
+
+    div.login div.logo h1{
+        font-size: 30px;
+    }
+
+        div.login form > i{
+            padding: 40px 0;
+            padding-bottom: 30px;
+            font-size: 80px;
+            color: #D0D0D0;
+        }
+
+        div.login form .input_login{
+            background: transparent;
+            position: relative;
+            width: 300px;
+            margin-bottom: 23px;
+            z-index: 0;
+        }
+
+            div.login form .input_login img{
+                width: 19px;
+            }
+
+
+        div.login form .input_login input{
+            display: block;
+            background: transparent;
+            font-size: 19px;
+            width: 100%;
+            padding: 11px 16px;
+            border-radius: 5px;
+            text-align: left;
+            outline: none;
+            border-radius: 40px;
+            border: 2px solid #D2D2D2;
+        }
+
+        div.login form .input_login label{
+            display: block;
+            background: #FFFFFF;
+            color: #9F868B;
+            /*width: 50%;*/
+            font-size: 20px;
+            font-family: serif;
+            padding: 4px 6px;
+            text-align: left;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 20px;
+            z-index: -1;
+            transition: all 0.2s;
+        }
+
+        div.login form .input_login input:focus{
+            border: 2px solid var(--azul);
+        }
+
+        div.login form .input_login input:focus + label{
+            margin-top: -26px;
+            font-size: 18px;
+            color: var(--azul);
+            z-index: 2;
+        }
+
+        div.login form .input_login label.input_fijo{
+            margin-top: -26px;
+            font-size: 18px;
+            color: var(--azul);
+            z-index: 2;
+        }
+
+        div.login form .input_login.password .icon_pass{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+            div.login form .input_login.password .icon_pass i{
+                font-size: 25px;
+                color: var(--gris);
+                padding: 0px;
+                border-radius: 50%;
+                transition: ease 0.2s;
+            }
+
+            div.login form .input_login.password .icon_pass i.animate{ /*desarrollar jquery*/
+                padding: 8px;
+                background: rgba(0,0,0,0.2);
+            }
+
+        div.login form button{
+            margin-top: 20px;
+            background: var(--azul);
+            height: auto;
+            padding: 14px 30px;
+            letter-spacing: 0;
+            border-radius: 50px;
+        }
+        
+        div.login div.crear_cuenta{
+            flex-direction: column;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        div.login div.crear_cuenta a.crear_cuenta{
+            color: var(--azul);
+        }
+
+        div.login div.crear_cuenta a.crear_cuenta:hover{
+            color: var(--azul_hover_b);
+        }
+
+h2.h2_logo{
+    display: inline-flex;
+    align-items: center;
+    color: var(--azul);
+    text-transform: capitalize;
+    font-size: 21px;
+}
+
+
+.error_login{
+    display: none;
+    text-align: center;
+    border: 2px solid #D80808;
+    color: #CC1E1E;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 30px;
+}
+
+
+div.volver{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 4;
+    cursor: pointer;
+}
+
+div.contenido_panel div.h1 div.volver i{
+    font-size: 24px;
+    color: white;
+}
+
+svg.volver{
+    width: 23px;
+}
+
+i.volver{
+    transform: rotate(180deg);
+}
+
+div.logo_login{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-top: 30px;
+}
+
+div.logo_login img{
+    width: 100px;
+}
+
+.enlaces_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enlaces_login a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    background: var(--azul);
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--blanco);
+    border-radius: 6px;
+    margin: 8px 0;
+    position: relative;
+}
+
+.enlaces_login a i{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    margin-right: 10px;
+}

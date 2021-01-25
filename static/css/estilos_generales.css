@@ -1,0 +1,225 @@
+
+/*--------------------*/
+/*--ESTILOS GENERALES--*/
+/*--------------------*/
+
+.flex{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.blur{
+    filter: blur(5px);
+}
+
+/*----------------------------*/
+.svg-icon{
+    width: 100%;
+}
+
+/*---------------------------------*/
+
+textarea, select, input, button { 
+    outline: none;
+}
+
+:focus { 
+    outline-color: transparent; 
+    outline-style: none;
+}
+
+:focus{
+    outline:none;
+} /*quitar recuadro punteado al hacer click a un boton*/
+::-moz-focus-inner{
+    border:0;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--gris);
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+}
+
+div{
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+}
+
+input,
+textarea{
+    font-family: serif;
+}
+
+.text_center {
+    text-align: center !important;
+}
+
+/*-----------------------------*/
+
+select.select_td{
+    padding: 5px 5px;
+    text-align: center;
+    width: 100%;
+}
+h3.h3_input{
+    width: 100%;
+    display: inline-flex;
+    padding: 10px 0;
+    color: var(--azul);
+}
+/*-----------------------------*/
+
+div.content_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+}
+
+div.content_button.next{
+    padding: 30px;
+}
+
+div.content_button button{
+    margin: 0 6px;
+    white-space: nowrap;
+}
+
+    div.content_button button i{
+        font-size: 15px;
+        margin-right: 8px;
+    }
+
+
+h2.titulo{
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 14px 0;
+    font-weight: 700;
+    color: var(--azul);
+    font-size: 26px;
+}
+
+h2.s_titulo{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 0;
+    font-weight: 700;
+    color: var(--azul);
+    font-size: 26px;
+}
+
+.ellipsis{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    word-break: break-all;
+}
+
+.none{
+    display: none !important;
+}
+
+/*------------------------------*/
+.modal_confirmar{
+    padding: 30px 6px;
+    justify-content: center;
+    height: 100%;
+}
+
+.modal_confirmar .sp_confirmar{
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 18px;
+    color: var(--azul);
+}
+
+.modal_confirmar div.button{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    text-align: center;
+}
+
+.modal_confirmar div.button button{
+    margin-right: 6px;
+}
+
+
+/*-----------------------------*/
+
+li{
+    list-style: none;
+}
+
+div.content_paginador{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px auto;
+}
+
+ul.paginador{
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+}
+
+ul li.paginador{
+    display: inline-flex;
+    margin: 5px;
+    font-size: 19px;
+}
+
+ul li.paginador a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    background: transparent;
+    color: var(--gris);
+}
+
+ul li.paginador a.actual{
+    background: var(--azul);
+    color: var(--blanco);
+}
+
+ul li.paginador a.next_prev{
+    width: 80px;
+}
+
+ul li.paginador a.next_prev.none{
+    pointer-events: none;
+}
+
+/*-----------------------------*/
+
+
+/*------EVITAR SELECCION--------*/
+img,
+a,
+button,
+span
+{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+}
+
+

@@ -1,0 +1,5 @@
+INSERT INTO USUARIOS VALUES ('generador1@gmail.com','Juan','generador_arboleda','$2y$10$IY61wx0/eWwTjIjLMqz3BOSThDVTgYQZgRzNVMKz6HsFxLWKS7n9K','generador','23qfvc1324123','2020-06-03 17:37:23','A','2020-06-03 17:37:23');
+INSERT INTO USUARIOS VALUES ('generador2@gmail.com','Juan','generador_la_tola','$2y$10$IY61wx0/eWwTjIjLMqz3BOSThDVTgYQZgRzNVMKz6HsFxLWKS7n9K','generador','23qfvc1324123','2020-06-03 17:37:23','A','2020-06-03 17:37:23');
+INSERT INTO USUARIOS VALUES ('generador3@gmail.com','Juan','generador_tumaco','$2y$10$IY61wx0/eWwTjIjLMqz3BOSThDVTgYQZgRzNVMKz6HsFxLWKS7n9K','generador','23qfvc1324123','2020-06-03 17:37:23','A','2020-06-03 17:37:23');
+INSERT INTO USUARIOS VALUES ('generador4@gmail.com','Juan','generador_san_bernardo','$2y$10$IY61wx0/eWwTjIjLMqz3BOSThDVTgYQZgRzNVMKz6HsFxLWKS7n9K','generador','23qfvc1324123','2020-06-03 17:37:23','A','2020-06-03 17:37:23');
+INSERT INTO USUARIOS VALUES ('supervisor@gmail.com','Juan','supervisor','$2y$10$G.o/k6yr1W2OW1wmSv0zxuHFi4VE9JEpP66XrbUabTbJ/kh36fE/W','supervisor','23qfvc1324123','2020-06-03 17:37:23','A','2020-06-03 17:37:23');

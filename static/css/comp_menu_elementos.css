@@ -1,0 +1,136 @@
+/*------------------------------*/
+/*--------Menu Elemento---------*/
+/*------------------------------*/
+
+.parent_me_elemento{
+    position: relative;
+}
+
+div.menu_elemento{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+div.menu_elemento  div.me_icon{
+    display: inline-flex;
+    padding: 0 8px;
+    padding-left: 24px;
+    padding-bottom: 4px;
+}
+
+div.menu_elemento  div.me_icon.filled{
+    background: rgba(0,0,0,0.45);
+    padding: 3px 12px;
+    border-radius: 30px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+div.menu_elemento  div.me_icon i{
+    font-size: 23px;
+    color: var(--gris);
+}
+
+div.menu_elemento  div.me_icon.filled i{
+    color: var(--blanco);
+}
+
+div.menu_elemento .me_opciones{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    width: 180px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.12),0 2px 6px 0 rgba(0,0,0,.24);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+div.menu_elemento .me_opciones .me_opcion{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: 17px;
+    padding: 11px 15px;
+    color: var(--gris);
+}
+
+div.menu_elemento .me_opciones .me_opcion:hover{
+    background: #F1F1F1;
+    color: var(--azul);
+}
+
+div.menu_elemento .me_opciones .me_opcion i{
+    font-size: 16px;
+    margin-right: 14px;
+}
+
+div.menu_elemento.usuario{
+    position: unset;
+}
+
+div.menu_elemento.usuario .me_opciones{
+    width: 345px;
+    position: absolute;
+    top: 56px;
+    z-index: 2;
+}
+
+div.menu_elemento.usuario div.me_icon{
+    padding: 2px 8px;
+    padding-right: 0;
+}
+
+div.menu_elemento.usuario div.me_icon span.main_sp{
+    margin-right: 6px;
+    /*font-weight: bold;*/
+}
+
+div.menu_elemento.usuario div.me_icon i{
+    font-size: 25px;
+}
+
+div.menu_elemento.usuario .me_opciones .me_opcion{
+    padding: 15px 18px;
+}
+
+div.menu_elemento.usuario .me_opciones .me_opcion i{
+    font-size: 20px;
+    margin-right: 18px;
+}
+
+div.menu_elemento.usuario .me_info_detalles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border_gris);
+    cursor: default;
+}
+
+div.menu_elemento.usuario .me_info_detalles img{
+    display: inline-flex;
+    width: 89px;
+    height: 89px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+div.menu_elemento.usuario .me_info_detalles span{
+    display: inline-flex;
+    font-size: 18px;
+    color: var(--gris);
+}
+
+div.menu_elemento.usuario .me_info_detalles span.sub{
+    display: inline-flex;
+    font-size: 18px;
+    color: var(--gris_c2);
+}

@@ -1,0 +1,23 @@
+ALTER TABLE AlertsTable
+ADD FOREIGN KEY (AlertRecipientID)
+REFERENCES AlertRecipientsTable (AlertRecipientID)
+ON UPDATE CASCADE ON DELETE CASCADE;
+
+ALTER TABLE modulos DROP FOREIGN KEY modulos_ibfk_1;
+
+-------------------------------
+ALTER TABLE cursos_codigos
+ADD FOREIGN KEY (id_curso)
+REFERENCES cursos (id_curso)
+ON UPDATE CASCADE ON DELETE CASCADE;
+
+ALTER TABLE cursos_codigos
+ADD FOREIGN KEY (usuario)
+REFERENCES usuarios (usuario)
+ON UPDATE CASCADE ON DELETE CASCADE;
+
+------------------------------
+ALTER TABLE actas
+ADD FOREIGN KEY (usuario)
+REFERENCES usuarios (usuario)
+ON UPDATE CASCADE ON DELETE CASCADE;

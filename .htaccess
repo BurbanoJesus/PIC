@@ -1,0 +1,113 @@
+#Options -Indexes
+#DirectoryIndex views/inicio/inicio.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /plataforma/
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+#RewriteRule ^(.*)$ views/inicio/$1 [L]
+#RewriteRule ^(.*)$ $1.php [L]
+#RewriteRule ^(lista_piezas?.*)$ views/inicio/generar_informes/$1.php [L]
+
+RewriteRule ^(inicio)$ views/inicio/$1.php [L]
+RewriteRule ^(quienes_somos)$ views/inicio/$1.php [L]
+RewriteRule ^(login)$ views/$1.php [L]
+RewriteRule ^(login_u)$ views/$1.php [L]
+RewriteRule ^(logout)$ views/$1.php [L]
+
+RewriteRule ^(experiencias_exitosas)$ views/inicio/experiencias_exitosas/$1.php [L]
+RewriteRule ^(detalles_producto)$ views/inicio/experiencias_exitosas/$1.php [L]
+RewriteRule ^(elegir_producto)$ views/inicio/experiencias_exitosas/$1.php [L]
+RewriteRule ^(editar_producto)$ views/inicio/experiencias_exitosas/$1.php [L]
+RewriteRule ^(cuentos)$ views/inicio/experiencias_exitosas/$1.php [L]
+RewriteRule ^(coplas)$ views/inicio/experiencias_exitosas/$1.php [L]
+RewriteRule ^(canciones)$ views/inicio/experiencias_exitosas/$1.php [L]
+RewriteRule ^(otros)$ views/inicio/experiencias_exitosas/$1.php [L]
+
+
+RewriteRule ^(aprende)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(cursos)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(curso)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(actividades)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(actividad)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(examen)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(resultados_examen)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(registrar_curso)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(agregar_modulo)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(agregar_actividad)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(agregar_actividad_general)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(agregar_examen)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(agregar_comentario)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(editar_curso)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(editar_modulo)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(editar_comentario)$ views/inicio/aprende/$1.php [L]
+RewriteRule ^(c_generar_certificado)$ core/controllers/inicio/aprende/$1.php [L]
+
+
+RewriteRule ^(juegos)$ views/inicio/juegos/$1.php [L]
+RewriteRule ^(lista_juego_vf)$ views/inicio/juegos/$1.php [L]
+RewriteRule ^(juego_verdadero_falso)$ views/inicio/juegos/$1.php [L]
+RewriteRule ^(juego_ahorcado)$ views/inicio/juegos/$1.php [L]
+RewriteRule ^(juego_arrastrar)$ views/inicio/juegos/$1.php [L]
+RewriteRule ^(registrar_juego_vf)$ views/inicio/juegos/$1.php [L]
+RewriteRule ^(registrar_juego_ahorcado)$ views/inicio/juegos/$1.php [L]
+RewriteRule ^(registrar_juego_arrastrar)$ views/inicio/juegos/$1.php [L]
+RewriteRule ^(administrar_juego_vf)$ views/inicio/juegos/$1.php [L]
+RewriteRule ^(administrar_juego_ahorcado)$ views/inicio/juegos/$1.php [L]
+RewriteRule ^(administrar_juego_arrastrar)$ views/inicio/juegos/$1.php [L]
+RewriteRule ^(editar_juego_ahorcado)$ views/inicio/juegos/$1.php [L]
+RewriteRule ^(editar_juego_arrastrar)$ views/inicio/juegos/$1.php [L]
+
+
+RewriteRule ^(email_active)$ views/inicio/usuarios/$1.php [L]
+RewriteRule ^(recuperar_password)$ views/inicio/usuarios/$1.php [L]
+RewriteRule ^(nuevo_password)$ views/inicio/usuarios/$1.php [L]
+RewriteRule ^(cambiar_password)$ views/inicio/usuarios/$1.php [L]
+RewriteRule ^(perfil)$ views/inicio/usuarios/$1.php [L]
+RewriteRule ^(registrar_usuario)$ views/inicio/usuarios/$1.php [L]
+RewriteRule ^(editar_usuario)$ views/inicio/usuarios/$1.php [L]
+RewriteRule ^(inicio/success)$ views/$1.php [L]
+
+RewriteRule ^(pruebas)$ views/$1.php [L]
+RewriteRule ^(componentes)$ views/inicio/$1.php [L]
+
+
+RewriteRule ^(estructura_principal)$ views/panel/estructura_principal/$1.php [L]
+RewriteRule ^(tecnologias)$ views/panel/estructura_principal/$1.php [L]
+RewriteRule ^(seleccionar_fecha)$ views/panel/estructura_principal/$1.php [L]
+RewriteRule ^(estructura_principal)$ views/panel/$1.php [L]
+RewriteRule ^(elegir_municipio)$ views/panel/$1.php [L]
+
+RewriteRule ^(panel)$ views/panel/generar_informes/$1.php [L]
+RewriteRule ^(generar_informes)$ views/panel/generar_informes/$1.php [L]
+RewriteRule ^(opciones_informes)$ views/panel/generar_informes/$1.php [L]
+RewriteRule ^(informe_1)$ views/panel/generar_informes/$1.php [L]
+RewriteRule ^(informe_2)$ views/panel/generar_informes/$1.php [L]
+RewriteRule ^(informe_3)$ views/panel/generar_informes/$1.php [L]
+RewriteRule ^(informe_4)$ views/panel/generar_informes/$1.php [L]
+RewriteRule ^(graficas)$ views/panel/generar_informes/$1.php [L]
+
+RewriteRule ^(busqueda_informes)$ views/panel/busqueda_informes/$1.php [L]
+RewriteRule ^(lista_archivos)$ views/panel/busqueda_informes/$1.php [L]
+RewriteRule ^(detalles_informe)$ views/panel/busqueda_informes/$1.php [L]
+
+RewriteRule ^(notificaciones)$ views/panel/notificaciones/$1.php [L]
+RewriteRule ^(detalles_notificacion)$ views/panel/notificaciones/$1.php [L]
+
+RewriteRule ^(gestion_ubicaciones)$ views/panel/gestion_ubicaciones/$1.php [L]
+RewriteRule ^(agregar_ubicacion)$ views/panel/gestion_ubicaciones/$1.php [L]
+RewriteRule ^(ubicaciones)$ views/inicio/$1.php [L]
+
+
+RewriteRule ^(gestion_productos)$ views/panel/gestion_productos/$1.php [L]
+RewriteRule ^(agregar_producto)$ views/panel/gestion_productos/$1.php [L]
+
+RewriteRule ^(gestion_usuarios)$ views/panel/gestion_usuarios/$1.php [L]
+RewriteRule ^(detalles_usuario)$ views/panel/gestion_usuarios/$1.php [L]
+RewriteRule ^(agregar_usuario)$ views/panel/gestion_usuarios/$1.php [L]
+
+RewriteRule ^(gestion_cursos)$ views/panel/$1.php [L]
+RewriteRule ^(panel/success)$ views/$1.php [L]
+
+</IfModule>
